@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./assets/app.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./assets/app.js"></script>
+    <title>Sticky Add to cart</title>
+</head>
+<body>
+    <div class="mob-edit down"><button class=""><span class=""><svg viewBox="0 0 20 20" class="" focusable="false" aria-hidden="true"><path d="M14.846 1.403l3.752 3.753.625-.626A2.653 2.653 0 0 0 15.471.778l-.625.625zm2.029 5.472l-3.752-3.753L1.218 15.028 0 19.998l4.97-1.217L16.875 6.875z"></path></svg></span><span>Edit</span></button></div>
+    <div class="wrapper">
+
+        <div class="sidebar">
+            <div class="mobile-nav">
+                <div class="back-button"></div>
+                <div class="arrow-up down"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true"><path d="M15 13a.997.997 0 0 1-.707-.293L10 8.414l-4.293 4.293a.999.999 0 1 1-1.414-1.414l5-5a.999.999 0 0 1 1.414 0l5 5A.999.999 0 0 1 15 13z"></path></svg></div>
+               
+            </div>
+<header class="sidebar-header">
+    <div class="sidebar-header-item active button">Sticky Button</div>
+    <div class="sidebar-header-item help">Document</div>
+</header>
+<div class="body active button">
+    <div class="settings-group">
+        <div class="card">
+            <span class="icon"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M17.5 1H14v6h5V2.5A1.5 1.5 0 0 0 17.5 1zM19 9h-5v10h3.5a1.5 1.5 0 0 0 1.5-1.5V9zM1 14h11v5H2.5A1.5 1.5 0 0 1 1 17.5V14zM2.5 1A1.5 1.5 0 0 0 1 2.5V12h11V1H2.5z"></path></svg></span>
+            <span class="text-node">Templates</span>
+            <span class="icon arrow" data-drawer="templates">
+                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true"><path d="M8 16a.999.999 0 0 1-.707-1.707L11.586 10 7.293 5.707a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5A.997.997 0 0 1 8 16z"></path></svg>
+            </span>
+        </div>
+    </div>
+    <div class="settings-group">
+        <div class="card">
+            <span class="icon"><svg viewBox="0 0 20 20" fill="#212529" class="" focusable="" aria-hidden=""><path fill-rule="evenodd" d="M9.027 0a1 1 0 0 0-.99.859l-.37 2.598A6.993 6.993 0 0 0 5.742 4.57l-2.437-.98a1 1 0 0 0-1.239.428L.934 5.981a1 1 0 0 0 .248 1.287l2.066 1.621a7.06 7.06 0 0 0 0 2.222l-2.066 1.621a1 1 0 0 0-.248 1.287l1.132 1.962a1 1 0 0 0 1.239.428l2.438-.979a6.995 6.995 0 0 0 1.923 1.113l.372 2.598a1 1 0 0 0 .99.859h2.265a1 1 0 0 0 .99-.859l.371-2.598a6.995 6.995 0 0 0 1.924-1.112l2.438.978a1 1 0 0 0 1.238-.428l1.133-1.962a1 1 0 0 0-.249-1.287l-2.065-1.621a7.063 7.063 0 0 0 0-2.222l2.065-1.621a1 1 0 0 0 .249-1.287l-1.133-1.962a1 1 0 0 0-1.239-.428l-2.437.979a6.994 6.994 0 0 0-1.924-1.113L12.283.86a1 1 0 0 0-.99-.859H9.027zm1.133 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg></span>
+            <span class="text-node">Settings</span>
+            <span class="icon arrow settings" data-drawer="settings">
+                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true"><path d="M8 16a.999.999 0 0 1-.707-1.707L11.586 10 7.293 5.707a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5A.997.997 0 0 1 8 16z"></path></svg>
+            </span>
+        </div>
+    </div>
+    <div class="settings-group">
+        <div class="card">
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <path d="M 31.595703 2.0039062 C 31.095359 2.0097119 30.593594 2.0292969 30.089844 2.0605469 C 23.319844 2.4705469 17.159844 5.1498437 12.339844 9.3398438 C 6.4498438 14.439844 2.5705469 21.809844 2.0605469 30.089844 C 1.5405469 38.469844 4.410625 46.449062 10.140625 52.539062 C 15.790625 58.549062 23.75 62 32 62 C 34.38 62 36.739297 61.719922 39.029297 61.169922 C 42.899297 60.239922 45.859219 57.389297 46.949219 53.529297 C 48.049219 49.619297 47.000859 45.580703 44.130859 42.720703 L 42.949219 41.539062 C 41.209219 39.789062 41.249141 37.579844 41.869141 36.089844 C 42.479141 34.589844 44.020234 33 46.490234 33 L 54.199219 33 C 56.399219 33 58.429531 32 59.769531 30.25 C 60.719531 29.01 61.210938 27.529766 61.210938 26.009766 C 61.210938 25.399766 61.130703 24.789688 60.970703 24.179688 C 59.380703 18.259687 56.040859 13.169141 51.630859 9.3691406 C 46.183984 4.6628906 39.100867 1.9168213 31.595703 2.0039062 z M 31.949219 4 C 38.239219 4 44.180469 6.1197656 48.980469 9.7597656 C 49.400469 10.079766 49.809219 10.409766 50.199219 10.759766 C 54.379219 14.319766 57.539063 19.109219 59.039062 24.699219 C 59.449062 26.209219 59.129688 27.789062 58.179688 29.039062 C 57.219687 30.279063 55.769219 31 54.199219 31 L 46.490234 31 C 43.600234 31 41.119531 32.660312 40.019531 35.320312 C 38.909531 37.990313 39.499062 40.909219 41.539062 42.949219 L 42.720703 44.130859 C 45.060703 46.480859 45.919531 49.790234 45.019531 52.990234 C 44.129531 56.140234 41.720547 58.470469 38.560547 59.230469 C 36.430547 59.740469 34.22 60 32 60 C 24.19 60 16.939844 56.859922 11.589844 51.169922 C 6.2498438 45.479922 3.5705469 38.040937 4.0605469 30.210938 C 4.5405469 22.430937 8.1995312 15.52 13.769531 10.75 C 18.239531 6.9 23.950938 4.4505469 30.210938 4.0605469 C 30.790937 4.0205469 31.369219 4 31.949219 4 z M 32 7 C 29.243 7 27 9.243 27 12 C 27 14.757 29.243 17 32 17 C 34.757 17 37 14.757 37 12 C 37 9.243 34.757 7 32 7 z M 32 9 C 33.654 9 35 10.346 35 12 C 35 13.654 33.654 15 32 15 C 30.346 15 29 13.654 29 12 C 29 10.346 30.346 9 32 9 z M 19 12 C 16.243 12 14 14.243 14 17 C 14 19.757 16.243 22 19 22 C 21.757 22 24 19.757 24 17 C 24 14.243 21.757 12 19 12 z M 45 12 C 42.243 12 40 14.243 40 17 C 40 19.757 42.243 22 45 22 C 47.757 22 50 19.757 50 17 C 50 14.243 47.757 12 45 12 z M 19 14 C 20.654 14 22 15.346 22 17 C 22 18.654 20.654 20 19 20 C 17.346 20 16 18.654 16 17 C 16 15.346 17.346 14 19 14 z M 45 14 C 46.654 14 48 15.346 48 17 C 48 18.654 46.654 20 45 20 C 43.346 20 42 18.654 42 17 C 42 15.346 43.346 14 45 14 z M 32 21 C 31.497 21 30.992953 21.033563 30.501953 21.101562 C 29.954953 21.176562 29.571484 21.682516 29.646484 22.228516 C 29.721484 22.774516 30.223438 23.156031 30.773438 23.082031 C 33.012438 22.777031 35.344078 23.33525 37.205078 24.65625 C 37.381078 24.78125 37.583203 24.841797 37.783203 24.841797 C 38.096203 24.841797 38.404609 24.694922 38.599609 24.419922 C 38.918609 23.968922 38.813281 23.345391 38.363281 23.025391 C 36.496281 21.700391 34.296 21 32 21 z M 25.894531 22.335938 C 25.763656 22.353109 25.63 22.397656 25.5 22.472656 C 24.98 22.772656 24.858766 23.360844 25.134766 23.839844 L 26.134766 25.570312 C 26.321766 25.894313 26.655953 26.072266 27.001953 26.072266 C 27.130953 26.095266 27.327 26.0375 27.5 25.9375 C 28.02 25.6375 28.141234 25.049312 27.865234 24.570312 L 26.865234 22.839844 C 26.658234 22.480594 26.287156 22.284422 25.894531 22.335938 z M 12 25 C 9.243 25 7 27.243 7 30 C 7 32.757 9.243 35 12 35 C 14.757 35 17 32.757 17 30 C 17 27.243 14.757 25 12 25 z M 40.382812 25.791016 C 40.254281 25.810469 40.127766 25.857188 40.009766 25.929688 C 39.538766 26.218688 39.390688 26.833687 39.679688 27.304688 C 40.011688 27.846688 40.286094 28.424484 40.496094 29.021484 C 40.640094 29.433484 41.026453 29.691406 41.439453 29.691406 C 41.548453 29.691406 41.660531 29.672766 41.769531 29.634766 C 42.290531 29.451766 42.565812 28.882328 42.382812 28.361328 C 42.127813 27.630328 41.790766 26.923766 41.384766 26.259766 C 41.168766 25.906516 40.768406 25.732656 40.382812 25.791016 z M 22.466797 26.001953 C 22.085703 25.944438 21.697656 26.11075 21.472656 26.5 C 21.172656 27.02 21.360844 27.589234 21.839844 27.865234 L 23.570312 28.865234 C 23.730313 28.957234 23.876688 29.042297 24.054688 29.029297 C 24.414687 29.006297 24.7375 28.846 24.9375 28.5 C 25.2375 27.98 25.049312 27.410766 24.570312 27.134766 L 22.839844 26.134766 C 22.720344 26.065766 22.593828 26.021125 22.466797 26.001953 z M 12 27 C 13.654 27 15 28.346 15 30 C 15 31.654 13.654 33 12 33 C 10.346 33 9 31.654 9 30 C 9 28.346 10.346 27 12 27 z M 21 31 C 20.447 31 20 31.4 20 32 C 20 32.6 20.447 33 21 33 L 23 33 C 23.553 33 24 32.6 24 32 C 24 31.4 23.553 31 23 31 L 21 31 z M 23.945312 35.001953 C 23.818234 35.021203 23.692016 35.065766 23.572266 35.134766 L 21.839844 36.134766 C 21.360844 36.410766 21.174609 36.98 21.474609 37.5 C 21.674609 37.846 21.997422 38.006297 22.357422 38.029297 C 22.535422 38.042297 22.679844 37.957234 22.839844 37.865234 L 24.572266 36.865234 C 25.050266 36.589234 25.2365 36.02 24.9375 35.5 C 24.7125 35.11 24.326547 34.944203 23.945312 35.001953 z M 27.105469 37.925781 C 26.712844 37.874266 26.341766 38.068484 26.134766 38.427734 L 25.134766 40.160156 C 24.858766 40.639156 24.98 41.225391 25.5 41.525391 C 25.673 41.625391 25.869047 41.685109 25.998047 41.662109 C 26.345047 41.662109 26.681234 41.479156 26.865234 41.160156 L 27.865234 39.427734 C 28.142234 38.949734 28.02 38.3625 27.5 38.0625 C 27.37 37.9875 27.236344 37.942953 27.105469 37.925781 z M 16 39 C 13.243 39 11 41.243 11 44 C 11 46.757 13.243 49 16 49 C 18.757 49 21 46.757 21 44 C 21 41.243 18.757 39 16 39 z M 16 41 C 17.654 41 19 42.346 19 44 C 19 45.654 17.654 47 16 47 C 14.346 47 13 45.654 13 44 C 13 42.346 14.346 41 16 41 z M 34 44 C 30.691 44 28 46.691 28 50 C 28 53.309 30.691 56 34 56 C 37.309 56 40 53.309 40 50 C 40 46.691 37.309 44 34 44 z M 34 46 C 36.206 46 38 47.794 38 50 C 38 52.206 36.206 54 34 54 C 31.794 54 30 52.206 30 50 C 30 47.794 31.794 46 34 46 z"/>
+            </svg></span>
+            <span class="text-node">Style</span>
+            <span class="icon arrow" data-drawer="Style">
+                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true"><path d="M8 16a.999.999 0 0 1-.707-1.707L11.586 10 7.293 5.707a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5A.997.997 0 0 1 8 16z"></path></svg>
+            </span>
+        </div>
+    </div>
+    <div class="settings-group">
+        <div class="card">
+            <span class="icon"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M1 1c0-.552.45-1 1.004-1h1.505c.831 0 1.505.672 1.505 1.5v.56l12.574.908c.877.055 1.52.843 1.397 1.71l-.866 6.034A1.504 1.504 0 0 1 16.63 12H5.014v2h10.043a3.005 3.005 0 0 1 3.011 3c0 1.657-1.348 3-3.01 3a3.005 3.005 0 0 1-2.84-4H6.85a3.005 3.005 0 0 1-2.84 4A3.005 3.005 0 0 1 1 17c0-1.306.838-2.418 2.007-2.83V2H2.004A1.002 1.002 0 0 1 1 1zm13.054 16c0-.552.449-1 1.003-1 .554 0 1.004.448 1.004 1s-.45 1-1.004 1a1.002 1.002 0 0 1-1.003-1zM3.007 17c0-.552.45-1 1.004-1s1.003.448 1.003 1-.449 1-1.003 1a1.002 1.002 0 0 1-1.004-1z"></path></svg></span>
+            <span class="text-node">Button Setup</span>
+            <span class="icon arrow" data-drawer="button-setup">
+                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true"><path d="M8 16a.999.999 0 0 1-.707-1.707L11.586 10 7.293 5.707a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5A.997.997 0 0 1 8 16z"></path></svg>
+            </span>
+        </div>
+    </div>
+  
+    <div class="drawer settings">
+        <header>
+            <span class="icon drawer-close"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M1 0a1 1 0 00-1 1v3a1 1 0 002 0V2h16v16H2v-2a1 1 0 10-2 0v3a1 1 0 001 1h18a1 1 0 001-1V1a1 1 0 00-1-1H1z"></path><path d="M6.414 9H14a1 1 0 110 2H6.414l3.293 3.293a.999.999 0 11-1.414 1.414l-5-5a.999.999 0 010-1.414l5-5a.999.999 0 111.414 1.414L6.414 9z"></path></svg>close</span>
+        </header>
+    
+         <div class="status">
+            <label for="">Logo Image</label>
+            <!-- <p class="description short">here you may Enable or Hide announcment bar</p> -->
+            <div class="wrapper">
+               <span class="status">Hide</span>
+               <div class="slider"> <span class="ball"></span></div>
+            </div>
+         </div>
+         <div class="status">
+            <label for="">Background Image</label>
+            <!-- <p class="description short">here you may Enable or Hide announcment bar</p> -->
+            <div class="wrapper">
+               <span class="status">Hide</span>
+               <div class="slider"> <span class="ball"></span></div>
+            </div>
+         </div>
+         
+         <div class="status">
+            <label for="">Heading Text</label>
+            <!-- <p class="description short">here you may Enable or Hide announcment bar</p> -->
+            <div class="wrapper">
+               <span class="status">Hide</span>
+               <div class="slider"> <span class="ball"></span></div>
+            </div>
+         </div>
+         <div class="status">
+            <label for="">Massage Text</label>
+            <!-- <p class="description short">here you may Enable or Hide announcment bar</p> -->
+            <div class="wrapper">
+               <span class="status">Hide</span>
+               <div class="slider"> <span class="ball"></span></div>
+            </div>
+         </div>
+         <!-- <div class="status">
+            <label for="">Product Varients</label>
+           
+            <div class="wrapper">
+               <span class="status">Hide</span>
+               <div class="slider"> <span class="ball"></span></div>
+            </div>
+         </div> -->
+    </div>
+    <div class="drawer Style">
+        <header>
+            <span class="icon drawer-close"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M1 0a1 1 0 00-1 1v3a1 1 0 002 0V2h16v16H2v-2a1 1 0 10-2 0v3a1 1 0 001 1h18a1 1 0 001-1V1a1 1 0 00-1-1H1z"></path><path d="M6.414 9H14a1 1 0 110 2H6.414l3.293 3.293a.999.999 0 11-1.414 1.414l-5-5a.999.999 0 010-1.414l5-5a.999.999 0 111.414 1.414L6.414 9z"></path></svg>close</span>
+        </header>
+        <div class="card">
+            
+            <div class="input-group">
+                <label for="">Display Options:</label>
+                <div class="selecte">
+                   <select name="" id="">
+                      <option value="">Show Mobile Only</option>
+                      <option value="">Show Desktop Only</option>
+                      <option value="">Both</option>
+                   </select>
+                </div>
+                <br/>
+                <label for="">Choose Position:</label>
+                <div class="selecte" id="choose-position">
+                   <select name="" id="">
+                      <option value="">Home Page Only</option>
+                      <option value="">Product Page Only</option>
+                      <option value="">Collection Page Only</option>
+                      <option value="">All</option>
+                   </select>
+                </div>
+                <br/>
+                <label for="">Choose Collection:<small><br/>applicable for collection only view</small></label>
+                <div class="selecte" id="all-collection">
+                   <select name="" id="" disabled>
+                       <option value="">All</option>
+                      <option value="">Home Page Only</option>
+                      <option value="">Product Page Only</option>
+                      <option value="">Collection Page Only</option>
+                   </select>
+                </div>
+             </div>
+             
+         </div>
+         <div class="card">
+             <h2 class="title left">General</h2>
+             <div class="input-group">
+                <label for="">Choose Background Image:</label>
+                <div class="Image-pick"><div class="image-holder"><span class="btn pick">Choose</span></span></div>
+                <input type="file"><div class="changer"><span class="flex-fill">Change</span><span class="flex-fill">Remove</span></div></div>
+             </div>
+             <div class="input-group">
+                <label for="">Choose Logo Image:</label>
+                <div class="Image-pick"><div class="image-holder"><span class="btn pick">Choose</span></span></div>
+                <input type="file"><div class="changer"><span class="flex-fill">Change</span><span class="flex-fill">Remove</span></div></div>
+             </div>
+            <div class="input-group">
+                <label for="">Set Bar Background Color:</label>
+                <div class="color-pick"><span class="color">#000000</span><input type="color"></div>
+             </div>
+             <div class="input-group">
+                <label for="">Text Color:</label>
+                <div class="color-pick"><span class="color">#000000</span><input type="color"></div>
+             </div>
+             <div class="input-group">
+                <label for="">Text Style:</label>
+                <div class="selecte">
+                   <select name="" id="">
+                      <option value="">MS Gothic</option>
+                      <option value="">Impact</option>
+                      <option value="">Sans serif</option>
+                   </select>
+                </div>
+             </div>
+         </div>
+    </div>
+    <div class="drawer button-setup">
+        <header>
+            <span class="icon drawer-close"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M1 0a1 1 0 00-1 1v3a1 1 0 002 0V2h16v16H2v-2a1 1 0 10-2 0v3a1 1 0 001 1h18a1 1 0 001-1V1a1 1 0 00-1-1H1z"></path><path d="M6.414 9H14a1 1 0 110 2H6.414l3.293 3.293a.999.999 0 11-1.414 1.414l-5-5a.999.999 0 010-1.414l5-5a.999.999 0 111.414 1.414L6.414 9z"></path></svg>close</span>
+        </header>
+        <div class="card">
+        <div class="input-group"><label for="">Button Text Here:</label><input type="text"></div>
+            
+            <div class="input-group">
+                <label for="">Set Background Color:</label>
+                <div class="color-pick"><span class="color">#000000</span><input type="color"></div>
+             </div>
+             <div class="input-group">
+                <label for="">Text Color:</label>
+                <div class="color-pick"><span class="color">#000000</span><input type="color"></div>
+             </div>
+             <div class="input-group">
+                <label for="">Text Style:</label>
+                <div class="selecte">
+                   <select name="" id="">
+                      <option value="">MS Gothic</option>
+                      <option value="">Impact</option>
+                      <option value="">Sans serif</option>
+                   </select>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="drawer templates">
+        <header>
+            <span class="icon drawer-close"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M1 0a1 1 0 00-1 1v3a1 1 0 002 0V2h16v16H2v-2a1 1 0 10-2 0v3a1 1 0 001 1h18a1 1 0 001-1V1a1 1 0 00-1-1H1z"></path><path d="M6.414 9H14a1 1 0 110 2H6.414l3.293 3.293a.999.999 0 11-1.414 1.414l-5-5a.999.999 0 010-1.414l5-5a.999.999 0 111.414 1.414L6.414 9z"></path></svg>close</span>
+        </header>
+        <div class="card">
+            <!-- <p class="description short">here you may Enable or Hide announcment bar</p> -->
+            <h2 class="title left">Choose Templates:</h2> 
+            <div class="input-group choose-template">
+                <span class="radio-group">
+                <input data-template="template-1" type="radio" checked name="behaviour">Default
+                </span>
+                <!-- <span class="radio-group">
+                <input type="radio" data-template="template-2" name="behaviour">Default Revert
+                </span> -->
+                <span class="radio-group">
+                    
+                    <input type="radio" data-template="template-3" name="behaviour">Template 1
+                    </span>
+                    <!-- <span class="radio-group">
+                        <input type="radio" data-template="template-4"  name="behaviour">Template 1 revert
+                        </span> -->
+                        <span class="radio-group">
+                            <input type="radio" data-template="template-5"  name="behaviour">Template 2 
+                            </span>
+                            <!-- <span class="radio-group">
+                                <input type="radio" data-template="template-6"  name="behaviour">Template 2 revert
+                                </span> -->
+                                <span class="radio-group">
+                                    <input type="radio" data-template="template-7"  name="behaviour">Template 3
+                                    </span>
+                                    <!-- <span class="radio-group">
+                                        <input type="radio" data-template="template-8"  name="behaviour">Template 3 revert
+                                        </span> -->
+                                        <!-- <span class="radio-group">
+                                            <input type="radio" data-template="template-9"  name="behaviour">Template 4
+                                            </span> -->
+             </div>
+         </div>
+    </div>
+    <div class="drawer support">
+        <header>
+            <span class="icon drawer-close"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M1 0a1 1 0 00-1 1v3a1 1 0 002 0V2h16v16H2v-2a1 1 0 10-2 0v3a1 1 0 001 1h18a1 1 0 001-1V1a1 1 0 00-1-1H1z"></path><path d="M6.414 9H14a1 1 0 110 2H6.414l3.293 3.293a.999.999 0 11-1.414 1.414l-5-5a.999.999 0 010-1.414l5-5a.999.999 0 111.414 1.414L6.414 9z"></path></svg>close</span>
+        </header>
+        <div class="card">
+            <h2 class="title left">Send Us Your Query:</h2>
+            <form action="">
+
+                <div class="input-group">
+                    <label for="">Massage:</label>
+<textarea name="" id="massage" class="massage" placeholder="Your Massage Here" cols="30" rows="10"></textarea>
+<div class="support-footer"><p class="support-alert">Minimum 20 Letters</p> <button type="submit" class="btn support-submit" data-drawer="support">Send </button></div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <!-- <div class="drawer settings">
+        <header>
+            <span class="icon drawer-close"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M1 0a1 1 0 00-1 1v3a1 1 0 002 0V2h16v16H2v-2a1 1 0 10-2 0v3a1 1 0 001 1h18a1 1 0 001-1V1a1 1 0 00-1-1H1z"></path><path d="M6.414 9H14a1 1 0 110 2H6.414l3.293 3.293a.999.999 0 11-1.414 1.414l-5-5a.999.999 0 010-1.414l5-5a.999.999 0 111.414 1.414L6.414 9z"></path></svg>close</span>
+        </header>
+        <div class="status">
+            <label for="">Announcement Bar</label>
+            <div class="wrapper">
+               <span class="status">Hide</span>
+               <div class="slider"> <span class="ball"></span></div>
+            </div>
+         </div>
+    </div> -->
+</div>
+<div class="body help-doc">
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+</div>
+<div class="sidebar-footer">
+    <button type="button" class="btn support" data-drawer="support">Help </button> 
+    <button type="button" class="btn reset">Reset </button> 
+</div>
+    </div>
+        <div class="main">
+            <header>
+        <div class="header-wrapper">
+            <div class="app-logo">Logo</div>
+            <div class="nav">
+                <div class="preview-dropdown">
+                    <div class="preview-button"><button id="" type="button" class=""><div class=""><span class=""><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15H7c0 .525-.015.793-.144 1.053-.12.239-.416.61-1.303 1.053A1 1 0 0 0 6.022 19h7.956a1.004 1.004 0 0 0 .995-.77 1.001 1.001 0 0 0-.544-1.134c-.873-.439-1.166-.806-1.285-1.043-.13-.26-.144-.528-.144-1.053h4.5a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 17.5 1h-15zm8.883 16a2.621 2.621 0 0 1-.027-.053c-.357-.714-.357-1.42-.356-1.895V15H9v.052c0 .475.001 1.181-.356 1.895a2.913 2.913 0 0 1-.027.053h2.766zM17 11H3v2h14v-2z"></path></svg></span></div></button></div>
+                    <div class="dropdown">
+                        <button id="" type="button" data-preview="mobile" class="nav-item mobile">
+                            <div class="">
+                                <span class="">
+                                    <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M3 1.5C3 .7 3.7 0 4.5 0h11c.8 0 1.5.7 1.5 1.5v17c0 .8-.7 1.5-1.5 1.5h-11c-.8 0-1.5-.7-1.5-1.5v-17zM5 2h10v14H5V2zm4 15a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H9z"></path></svg>
+                                </span>
+                                </div>Mobile
+                                </button>
+                                <button id="" type="button" data-preview="desktop" class="nav-item desktop active">
+                                    <div><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15H7c0 .525-.015.793-.144 1.053-.12.239-.416.61-1.303 1.053A1 1 0 0 0 6.022 19h7.956a1.004 1.004 0 0 0 .995-.77 1.001 1.001 0 0 0-.544-1.134c-.873-.439-1.166-.806-1.285-1.043-.13-.26-.144-.528-.144-1.053h4.5a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 17.5 1h-15zm8.883 16a2.621 2.621 0 0 1-.027-.053c-.357-.714-.357-1.42-.356-1.895V15H9v.052c0 .475.001 1.181-.356 1.895a2.913 2.913 0 0 1-.027.053h2.766zM17 11H3v2h14v-2z"></path>
+                                    </svg></div>
+                                    Desktop</button>
+                    </div>
+                </div>
+                <button type="button " class="btn save">Publish</button>
+            </div>
+        </div>
+            </header>
+    
+            <div class="preview" >
+                
+       <div class="template template-1  default-template ">
+        <div class="preview-desktop" id="desktop">
+            <div class="ac-container" style="top: 43px; left: 182px; opacity: 1;"><h2>Age Verification</h2><p>This Website requires you to be <strong>21</strong> years or older to enter. Please enter your Date of Birth in the fields below in order to continue:</p><div class="errors"><ul><li><span>x</span>Day is invalid or empty</li><li><span>x</span>Year is invalid or empty</li></ul></div><div class="fields"><select class="month"><option value="0">January</option><option value="1">February</option><option value="2">March</option><option value="3">April</option><option value="4">May</option><option value="5">June</option><option value="6">July</option><option value="7">August</option><option value="8">September</option><option value="9">October</option><option value="10">November</option><option value="11">December</option></select><input class="day" maxlength="2"><input class="year" maxlength="4"><button>Submit</button></div></div>
+            
+        </div>
+        <div class="preview-mobile" id="mobile">
+            <div class="ac-container" style="top: 43px; left: 182px; opacity: 1;"><h2>Age Verification</h2><p>This Website requires you to be <strong>21</strong> years or older to enter. Please enter your Date of Birth in the fields below in order to continue:</p><div class="errors"><ul><li><span>x</span>Day is invalid or empty</li><li><span>x</span>Year is invalid or empty</li></ul></div><div class="fields"><select class="month"><option value="0">January</option><option value="1">February</option><option value="2">March</option><option value="3">April</option><option value="4">May</option><option value="5">June</option><option value="6">July</option><option value="7">August</option><option value="8">September</option><option value="9">October</option><option value="10">November</option><option value="11">December</option></select><input class="day" maxlength="2"><input class="year" maxlength="4"><button>Submit</button></div></div>
+        </div>
+       </div>
+ 
+       <div class="template template-3 template-one hide">
+        <div class="preview-desktop" id="desktop">
+            <div id="modal_content" style="top: 51px; left: 350px;"><div id="modal_content_wrapper" class="content_wrapper"><h2>Are you 21 or older?</h2><nav><ul><li><a href="#nothing" class="av_btn av_go" rel="yes">Yes</a></li><li><a href="#nothing" class="av_btn av_no" rel="no">No</a></li></ul></nav><p>You must verify that you are 21 years of age or older to enter this site.</p></div><div id="modal_regret_wrapper" class="content_wrapper" style="display:none;"><h2>We're Sorry!</h2><nav><small>I hit the wrong button!</small> <ul><li><a href="#nothing" class="av_btn av_go" rel="yes">I'm old enough!</a></li></ul></nav><p>You must be 21 years of age or older to enter this site.</p></div></div>
+            
+        </div>
+        <div class="preview-mobile" id="mobile">
+            <div id="modal_content" style="top: 51px; left: 350px;"><div id="modal_content_wrapper" class="content_wrapper"><h2>Are you 21 or older?</h2><nav><ul><li><a href="#nothing" class="av_btn av_go" rel="yes">Yes</a></li><li><a href="#nothing" class="av_btn av_no" rel="no">No</a></li></ul></nav><p>You must verify that you are 21 years of age or older to enter this site.</p></div><div id="modal_regret_wrapper" class="content_wrapper" style="display:none;"><h2>We're Sorry!</h2><nav><small>I hit the wrong button!</small> <ul><li><a href="#nothing" class="av_btn av_go" rel="yes">I'm old enough!</a></li></ul></nav><p>You must be 21 years of age or older to enter this site.</p></div></div>
+        </div>
+       </div>
+      
+       <div class="template template-5 template-two hide">
+        <div class="preview-desktop" id="desktop">
+            <div class="age-overlay">
+             <div class="age-wrapper">
+                 <div class="logo-wrapper" style="background-image: url('./assets/demo.png');"><img class="logo" src="./assets/demo.png" alt="">
+                </div>
+                 <div class="age-body">
+                     <span class="heading">Varify Your Age</span>
+                     <span class="age-massage">You Must Be 22 Year Old</span>
+                     <span class="birthday"></span>
+                 </div>
+                 <div class="age-footer">
+
+                    <button class="btn">yes</button><button class="btn">no</button>
+                 </div>
+             </div>
+            
+            </div>
+            
+        </div>
+        <div class="preview-mobile" id="mobile">
+            <div class="age-overlay">
+                <div class="age-wrapper">
+                    <div class="logo-wrapper" style="background-image: url('./assets/demo.png');"><img class="logo" src="./assets/demo.png" alt="">
+                   </div>
+                    <div class="age-body">
+                        <span class="heading">Varify Your Age</span>
+                        <span class="age-massage">You Must Be 22 Year Old</span>
+                        <span class="birthday"></span>
+                    </div>
+                    <div class="age-footer">
+   
+                       <button class="btn">yes</button><button class="btn">no</button>
+                    </div>
+                </div>
+               
+               </div>
+        </div>
+       </div>
+      
+       <div class="template template-7 template-two template-three hide">
+        <div class="preview-desktop" id="desktop">
+            <div class="add-to-cart-bar-wrapper">
+             <div class="product-img-wrapper">
+                 
+                 <div class="product-price">
+                    <span class="product-title">Demo Product</span>
+                     <span class="money">$20.00</span>
+                     <span class="comapre-price"></span>
+                 </div>
+             </div>
+             <div class="product-form">
+                 <div class="prodduct-varient-wrapper">
+                     <div class="color custom-select">
+                         <select name="" class="varient-selector" id="">
+  <option value="" class="options">red</option>
+  <option value="" class="options">green</option>
+  <option value="" class="options">blue</option>
+                     </select>
+                  </div>
+                     <div class="size custom-select"><select name="" class="varient-selector" id="">
+                      <option value="" class="options">S</option>
+                      <option value="" class="options">M</option>
+                      <option value="" class="options">L</option>
+                     </select></div>
+                     <div class="material custom-select">
+                         <select name="" class="varient-selector" id="">
+                          <option value="" class="options">Cotton</option>
+                          <option value="" class="options">Silk</option>
+                          <option value="" class="options">Rush</option>
+                         </select>
+                      </div>
+                 </div>
+                 
+                 <div class="add-cart">
+                     <div class="quantity-selector">
+                         <span class="plus">+</span>
+                         <input  value="1" min="1" class="qtn" id="qtn">
+                         <span class="minus">-</span>
+                     </div>
+                     <button class="add-to-cart-btn"><span>add to cart</span></button>
+                 </div>
+             </div>
+            </div>
+            
+        </div>
+        <div class="preview-mobile" id="mobile">
+         <div class="add-to-cart-bar-wrapper">
+             <div class="product-img-wrapper">
+                 <div class="productimg"><img src="./assets/demo.png" alt=""></div>
+                 <div class="product-price">
+                     <span class="product-title">Demo Product</span>
+                     <span class="money">$20.00</span>
+                     <span class="comapre-price"></span>
+                 </div>
+                 <div class="add-cart">
+                    <div class="quantity-selector">
+                        <span class="plus">+</span>
+                        <input  value="1" min="1" class="qtn" id="qtn">
+                        <span class="minus">-</span>
+                    </div>
+                    <button class="add-to-cart-btn"><span>add to cart</span></button>
+                </div>
+             </div>
+             <div class="product-form">
+                 <div class="prodduct-varient-wrapper">
+                     <div class="color custom-select"><select name="" class="varient-selector" id="">
+  <option value="" class="options">red</option>
+  <option value="" class="options">green</option>
+  <option value="" class="options">blue</option>
+                     </select>
+                  </div>
+                     <div class="size custom-select"><select name="" class="varient-selector" id="">
+                      <option value="" class="options">S</option>
+                      <option value="" class="options">M</option>
+                      <option value="" class="options">L</option>
+                     </select></div>
+                     <div class="material custom-select">
+                         <select name="" class="varient-selector" id="">
+                          <option value="" class="options">Cotton</option>
+                          <option value="" class="options">Silk</option>
+                          <option value="" class="options">Rush</option>
+                         </select>
+                      </div>
+                 </div>
+                 
+                 
+             </div>
+            </div>
+        </div>
+       </div>
+     
+       
+            </div>
+        </div>
+    </div>
+ <div class="overlay"></div>   
+<div class="alert card">
+    <span class="header"><span class="icon close"><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M11.414 10l6.293-6.293a1 1 0 1 0-1.414-1.414L10 8.586 3.707 2.293a1 1 0 0 0-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 1 0 1.414 1.414L10 11.414l6.293 6.293A.998.998 0 0 0 18 17a.999.999 0 0 0-.293-.707L11.414 10z"></path></svg></span></span> 
+    <span class="text-node">your settings saved</span></div>
+</body>
+</html>
